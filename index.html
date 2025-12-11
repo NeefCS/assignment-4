@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naif Portfolio | Assignment 4</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Naif Portfolio</h1>
+    <p id="greeting"></p>
+    <button id="toggleModeBtn">Toggle Dark/Light Mode</button>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm <strong>Naif</strong>, a Computer Science student passionate about
+        web development and AI. This final version of my portfolio showcases
+        interactive features, live data, and API integration.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <input type="text" id="searchInput" placeholder="Search projects..." />
+      <p id="noResults" class="hidden">No matching projects found.</p>
+
+      <div class="projects-grid" id="projectsGrid">
+        <div class="project-card fade-in">
+          <img src="assets/images/project1-placeholder.jpeg" alt="AI Project" />
+          <div class="project-info">
+            <h3>Data Science & AI Project</h3>
+            <p>
+              Analyzed data, visualized insights, and applied AI models for prediction. 🚀
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <img src="assets/images/project2-placeholder.jpeg" alt="University Bus App" />
+          <div class="project-info">
+            <h3>University Bus App</h3>
+            <p>
+              Built a bus tracker app concept for campus commuters to monitor routes. 🚌
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitHub Projects -->
+      <div id="githubProjects">
+        <h3>My Latest GitHub Repositories</h3>
+        <ul id="repoList">Loading repositories...</ul>
+        <p id="repoError" class="hidden">⚠️ Unable to load GitHub repositories.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="formMsg"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Naif Portfolio | Assignment 4</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
