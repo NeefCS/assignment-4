@@ -26,3 +26,7 @@ The site includes dynamic content, GitHub API integration, dark/light mode, and 
 1. Clone the repository  
    ```bash
    git clone https://github.com/NeefCS/assignment-4.git
+
+
+## 🌐 Live Deployment
+[View Live Site](https://neefcs.github.io/assignment-4/)
